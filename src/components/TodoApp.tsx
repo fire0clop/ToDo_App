@@ -102,9 +102,9 @@ const TodoApp: React.FC = () => {
                                     data-checked={todo.completed ? "true" : "false"}
                                 >
                                     {todo.completed ? (
-                                        <CheckIcon />
+                                        <CheckIcon style={{ fontSize: '16px' }} /> /* Уменьшаем размер иконки */
                                     ) : (
-                                        <div style={{ width: 24, height: 24 }} />
+                                        <div style={{ width: 24, height: 24 }} /> /* Пустой div с фиксированными размерами */
                                     )}
                                 </ListItemIcon>
                                 <ListItemText
